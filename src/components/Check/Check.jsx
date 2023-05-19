@@ -10,7 +10,6 @@ function Check(props) {
     [props.amount]
   );
 
-  console.log(props);
   return (
     <div className={[styles.check, props.className].join(' ')}>
       <ReactSVG src={check} />
