@@ -11,6 +11,10 @@
 @include font('Gilroy', 'Gilroy', 800);
 @include font('Gilroy', 'Gilroy', 900);
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Gilroy', sans-serif;
