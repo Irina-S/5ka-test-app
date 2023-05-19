@@ -1,4 +1,5 @@
 @import './mixins/font';
+@import './variables';
 
 @include font('Gilroy', 'Gilroy', 100);
 @include font('Gilroy', 'Gilroy', 200);
