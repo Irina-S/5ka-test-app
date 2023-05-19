@@ -1,0 +1,16 @@
+@import './mixins/font';
+
+@include font('Gilroy', 'Gilroy', 100);
+@include font('Gilroy', 'Gilroy', 200);
+@include font('Gilroy', 'Gilroy', 300);
+@include font('Gilroy', 'Gilroy', 400);
+@include font('Gilroy', 'Gilroy', 500);
+@include font('Gilroy', 'Gilroy', 600);
+@include font('Gilroy', 'Gilroy', 700);
+@include font('Gilroy', 'Gilroy', 800);
+@include font('Gilroy', 'Gilroy', 900);
+
+body {
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+}
