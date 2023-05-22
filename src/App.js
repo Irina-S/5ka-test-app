@@ -21,7 +21,7 @@ function App() {
         <Arrow is-animated className={styles.arrow} />
       </main>
       <footer className={styles.footer}>
-        <Button type="square" icon={chevronLeft} />
+        <Button icon={chevronLeft} type="square" />
         <Button icon={man}>Вызов сотрудника</Button>
       </footer>
     </div>
