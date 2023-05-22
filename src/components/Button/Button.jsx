@@ -1,5 +1,6 @@
 import styles from './Button.module.scss';
 import { ReactSVG } from 'react-svg';
+import classnames from 'classnames';
 
 const Types = {
   Default: 'default',
@@ -7,13 +8,12 @@ const Types = {
 };
 
 function Button(props) {
-  const buttonClasses = [
-    styles.button,
-    props.type === Types.Square ? styles.square : '',
-  ];
-
   return (
-    <button className={buttonClasses.join(' ')}>
+    <button
+      className={classnames(styles.button, {
+        [styles.square]: props.type === Types.Square,
+      })}
+    >
       {props.icon ? <ReactSVG src={props.icon} className={styles.icon} /> : ''}
       {props.children}
     </button>

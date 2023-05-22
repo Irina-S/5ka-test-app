@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import styles from './Check.module.scss';
 import { ReactSVG } from 'react-svg';
 import check from './../../assets/img/check.svg';
+import classnames from 'classnames';
 
 function Check(props) {
   const wholeNumber = useMemo(() => Math.trunc(props.amount), [props.amount]);
@@ -11,7 +12,7 @@ function Check(props) {
   );
 
   return (
-    <div className={[styles.check, props.className].join(' ')}>
+    <div className={classnames(styles.check, props.className)}>
       <ReactSVG src={check} />
       <div className={styles.body}>
         <div className={styles.title}>Стоимость покупок</div>
