@@ -5,8 +5,8 @@ import check from './../../assets/img/check.svg';
 import classnames from 'classnames';
 
 function Check(props) {
-  const wholeNumber = useMemo(() => Math.trunc(props.amount), [props.amount]);
-  const integerNumber = useMemo(
+  const wholePart = useMemo(() => Math.trunc(props.amount), [props.amount]);
+  const integerPart = useMemo(
     () => props.amount.toString().split('.')[1],
     [props.amount]
   );
@@ -17,8 +17,8 @@ function Check(props) {
       <div className={styles.body}>
         <div className={styles.title}>Стоимость покупок</div>
         <div className={styles.amount}>
-          {wholeNumber}
-          <span className={styles.kopecks}>,{integerNumber}</span>₽
+          {wholePart}
+          <span className={styles.kopecks}>,{integerPart}</span>₽
         </div>
         <div className={styles.text}>
           Приложите
