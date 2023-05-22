@@ -13,3 +13,8 @@
 ### `npm run build`
 
 Генерация билда.
+
+### `npm audit --production`
+
+Проверка на уязвимости. С учетом переноса react-scripts в devDevendencies.
+(https://github.com/facebook/create-react-app/issues/11174)
