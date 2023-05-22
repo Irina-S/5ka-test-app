@@ -4,8 +4,8 @@ import { ReactSVG } from 'react-svg';
 import check from './../../assets/img/check.svg';
 
 function Check(props) {
-  const rubles = useMemo(() => Math.trunc(props.amount), [props.amount]);
-  const kopecks = useMemo(
+  const wholeNumber = useMemo(() => Math.trunc(props.amount), [props.amount]);
+  const integerNumber = useMemo(
     () => props.amount.toString().split('.')[1],
     [props.amount]
   );
@@ -16,8 +16,8 @@ function Check(props) {
       <div className={styles.body}>
         <div className={styles.title}>Стоимость покупок</div>
         <div className={styles.amount}>
-          {rubles}
-          <span className={styles.kopecks}>,{kopecks}</span>₽
+          {wholeNumber}
+          <span className={styles.kopecks}>,{integerNumber}</span>₽
         </div>
         <div className={styles.text}>
           Приложите

@@ -5,9 +5,10 @@ import arrow from './../../assets/img/arrow.svg';
 function Arrow(props) {
   return (
     <div
-      className={[props.className, props.animated ? styles.animated : ''].join(
-        ' '
-      )}
+      className={[
+        props.className,
+        props['is-animated'] ? styles.animated : '',
+      ].join(' ')}
     >
       <ReactSVG src={arrow} />
     </div>
