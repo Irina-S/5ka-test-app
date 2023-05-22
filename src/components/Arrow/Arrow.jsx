@@ -1,7 +1,7 @@
 import styles from './Arrow.module.scss';
 import { ReactSVG } from 'react-svg';
 import classnames from 'classnames';
-import arrow from './../../assets/img/arrow.svg';
+import arrow from '@/assets/img/arrow.svg';
 
 function Arrow(props) {
   return (

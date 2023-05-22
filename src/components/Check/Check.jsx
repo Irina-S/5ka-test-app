@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import styles from './Check.module.scss';
 import { ReactSVG } from 'react-svg';
-import check from './../../assets/img/check.svg';
+import check from '@/assets/img/check.svg';
 import classnames from 'classnames';
 
 function Check(props) {

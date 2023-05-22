@@ -1,10 +1,10 @@
 import styles from './App.module.scss';
-import Button from './components/Button/Button';
-import Check from './components/Check/Check';
-import Time from './components/Time/Time';
-import Arrow from './components/Arrow/Arrow';
-import chevronLeft from './assets/icons/chevron-left.svg';
-import man from './assets/icons/man.svg';
+import Button from '@/components/Button/Button';
+import Check from '@/components/Check/Check';
+import Time from '@/components/Time/Time';
+import Arrow from '@/components/Arrow/Arrow';
+import chevronLeft from '@/assets/icons/chevron-left.svg';
+import man from '@/assets/icons/man.svg';
 
 function App() {
   const cashRegisterNumber = 1;
