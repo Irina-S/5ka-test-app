@@ -18,7 +18,7 @@ function Check(props) {
         <div className={styles.title}>Стоимость покупок</div>
         <div className={styles.amount}>
           {wholePart}
-          <span className={styles.kopecks}>,{integerPart}</span>₽
+          <span className={styles.integer}>,{integerPart}</span>₽
         </div>
         <div className={styles.text}>
           Приложите
